@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:17'
+    environment:
+      - 'POSTGRES_DB=staybooking'
+      - 'POSTGRES_PASSWORD=secret'
+      - 'POSTGRES_USER=staybooking'
+    ports:
+      - '5432'
